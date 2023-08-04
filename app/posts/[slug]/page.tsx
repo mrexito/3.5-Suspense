@@ -11,9 +11,9 @@ export default async function Page({ params }) {
       <div className="container">
         {/* Post frontmatter */}
         <header className="rounded bg-gray-100 p-8">
-          <h1 className="font-sherif text-3xl">Learn NextJS</h1>
+          <h1 className="font-sherif text-3xl">{frontmatter.title}</h1>
           <p className="text-sm font-light uppercase leading-snug tracking-wide">
-            Raul Gimeno
+            {frontmatter.author}
           </p>
         </header>
         {/*Post content */}

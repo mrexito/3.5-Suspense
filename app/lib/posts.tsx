@@ -2,7 +2,7 @@ import path from "path";
 import fs from "fs";
 import { compileMDX } from "next-mdx-remote/rsc"
 
-const rootDirectory = path.join(process.cwd(),"content")
+const rootDirectory = path.join(process.cwd(),"app/content")
 console.log(rootDirectory)
 export async function getPostBySlug(slug:string) {
 
@@ -19,4 +19,4 @@ export async function getPostBySlug(slug:string) {
   
   return { content, frontmatter}
 }
-console.log('here');
+
