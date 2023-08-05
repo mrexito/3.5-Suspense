@@ -26,7 +26,7 @@ export async function getPostBySlug(slug:string) {
       parseFrontmatter: true
     }
   })
-  
+  await wait(300)
   return { content, frontmatter, slug:realSlug}
 }
 
@@ -37,5 +37,10 @@ export async function getAllPosts() {
     const post = await getPostBySlug(file)
     posts.push(post)
   }
+  await wait(3000)
   return posts
+}
+
+export async function wait(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms)) 
 }

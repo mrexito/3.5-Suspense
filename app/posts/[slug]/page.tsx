@@ -2,8 +2,8 @@ import { getPostBySlug } from "@/app/lib/posts";
 
 
 export default async function Page({ params }) {
-  const { slug } = params;
-  console.log(slug)
+  const { slug } = params
+  console.log("slug:", slug)
 
   const {content, frontmatter} = await getPostBySlug(slug)
   return (

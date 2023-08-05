@@ -12,6 +12,9 @@ export default function Header() {
           <li>
             <NavLink href="/about">About</NavLink>
           </li>
+          <li>
+            <NavLink href="/posts">Blogs</NavLink>
+          </li>
           <ContactButton />
         </ul>
       </nav>
