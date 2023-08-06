@@ -20,5 +20,5 @@ export default async function Page({ params }) {
         <main className="prose mt-12">{content}</main>
       </div>
     </section>
-  );
+  )
 }
